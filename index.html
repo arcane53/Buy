@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Awesome Products</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styles for demonstration purposes, though Tailwind is preferred */
+        .product-card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .buy-button {
+            transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+        }
+        .buy-button:hover {
+            background-color: #3750f7; /* Darker blue on hover */
+            transform: translateY(-2px);
+        }
+        .buy-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center py-10 px-4 sm:px-6 lg:px-8">
+
+    <!-- Header Section -->
+    <header class="text-center mb-12 w-full max-w-4xl">
+        <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+            Discover Our Amazing Products
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600">
+            High-quality items crafted just for you. Explore our collection below!
+        </p>
+    </header>
+
+    <!-- Products Section -->
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mb-12">
+
+        <!-- Product 1 Card -->
+        <div class="product-card bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+            <img
+                src="https://placehold.co/400x300/e0e7ff/3750f7?text=Product+One"
+                alt="Product One"
+                class="w-full h-48 object-cover rounded-lg mb-6 shadow-md"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x300/e0e7ff/3750f7?text=Placeholder';"
+            >
+            <h2 class="text-3xl font-bold text-gray-800 mb-3">Premium Gadget</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Experience the next level of innovation with our Premium Gadget. Sleek design,
+                unbeatable performance, and a user-friendly interface.
+            </p>
+            <div class="flex items-center justify-center mb-6">
+                <span class="text-4xl font-extrabold text-indigo-700 mr-2">$199.99</span>
+            </div>
+            <button class="buy-button bg-indigo-600 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75">
+                Buy Now
+            </button>
+        </div>
+
+        <!-- Product 2 Card -->
+        <div class="product-card bg-white p-8 rounded-xl shadow-lg flex flex-col items-center text-center">
+            <img
+                src="https://placehold.co/400x300/ffe0e7/f73750?text=Product+Two"
+                alt="Product Two"
+                class="w-full h-48 object-cover rounded-lg mb-6 shadow-md"
+                onerror="this.onerror=null;this.src='https://placehold.co/400x300/ffe0e7/f73750?text=Placeholder';"
+            >
+            <h2 class="text-3xl font-bold text-gray-800 mb-3">Smart Accessory</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Enhance your daily routine with our versatile Smart Accessory. Designed for
+                convenience, style, and seamless integration into your life.
+            </p>
+            <div class="flex items-center justify-center mb-6">
+                <span class="text-4xl font-extrabold text-red-700 mr-2">$49.99</span>
+            </div>
+            <button class="buy-button bg-red-600 text-white font-semibold py-3 px-8 rounded-full shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-75">
+                Buy Now
+            </button>
+        </div>
+    </main>
+
+    <!-- Link to Other Page -->
+    <section class="text-center w-full max-w-3xl">
+        <p class="text-lg text-gray-700 mb-6">
+            Want to see more of what we offer?
+        </p>
+        <a href="#" class="inline-block bg-blue-500 text-white font-semibold py-3 px-10 rounded-full shadow-lg hover:bg-blue-600 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transform transition-transform duration-200">
+            Explore Our Full Collection
+        </a>
+    </section>
+
+</body>
+</html>
